@@ -1,0 +1,53 @@
+{
+  "scan_timestamp": "2026-05-23T19:22:00Z",
+  "account_id": "000000000000",
+  "region": "us-east-1",
+  "summary": {
+    "total_orphans": 3,
+    "estimated_monthly_waste_usd": 0.64
+  },
+  "findings": [
+    {
+      "resource_id": "vol-0a912d93",
+      "resource_type": "ebs_volume",
+      "reason": "unattached",
+      "age_days": 0,
+      "estimated_monthly_cost_usd": 0.64,
+      "tags": {
+        "Project": "NimbusKart",
+        "Environment": "staging",
+        "Owner": "Chandu"
+      },
+      "suggested_action": "delete",
+      "safe_to_auto_delete": true
+    },
+    {
+      "resource_id": "vol-c86fac06",
+      "resource_type": "ebs_volume",
+      "reason": "missing_tags:Project,Environment,Owner",
+      "age_days": 0,
+      "estimated_monthly_cost_usd": 0.0,
+      "tags": {
+        "Project": null,
+        "Environment": null,
+        "Owner": null
+      },
+      "suggested_action": "add_missing_tags",
+      "safe_to_auto_delete": false
+    },
+    {
+      "resource_id": "vol-c24f046d",
+      "resource_type": "ebs_volume",
+      "reason": "missing_tags:Project,Environment,Owner",
+      "age_days": 0,
+      "estimated_monthly_cost_usd": 0.0,
+      "tags": {
+        "Project": null,
+        "Environment": null,
+        "Owner": null
+      },
+      "suggested_action": "add_missing_tags",
+      "safe_to_auto_delete": false
+    }
+  ]
+}
