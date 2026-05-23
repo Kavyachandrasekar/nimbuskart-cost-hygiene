@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Janitor generated outputs
+janitor/report.json
+janitor/summary.md
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfstate.backup
+.terraform.lock.hcl
