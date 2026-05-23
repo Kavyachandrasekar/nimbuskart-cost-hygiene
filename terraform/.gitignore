@@ -2,3 +2,7 @@
 *.tfstate
 *.tfstate.*
 terraform.tfstate.backup
+__pycache__/
+*.pyc
+janitor/report.json
+janitor/summary.md
