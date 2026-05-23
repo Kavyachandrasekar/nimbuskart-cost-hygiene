@@ -7,6 +7,9 @@ on:
 jobs:
   cost-janitor:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      issues: write
 
     services:
       localstack:
