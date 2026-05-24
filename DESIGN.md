@@ -5,6 +5,7 @@
 Core logic (report schema, exit codes) stays unchanged in `core.py`.
 Each cloud gets its own provider module:
 
+```
 janitor/
 ├── core.py         ← common logic
 ├── providers/
@@ -12,7 +13,7 @@ janitor/
 │   ├── aws.py      ← boto3
 │   ├── gcp.py      ← google-cloud-sdk (future)
 │   └── azure.py    ← azure-sdk (future)
-
+```
 GCP: EBS→Persistent Disk, EC2→Compute Engine, EIP→Static IP.
 Adding GCP = write `gcp.py` only. Core untouched.
 
